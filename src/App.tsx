@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"; // Ensure you have this image in your assets folder
 import {
   Heart,
   Calendar,
@@ -375,8 +375,7 @@ const App = () => {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage:
-              'url("https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")',
+            backgroundImage: 'url("/hero-bg.jpg")',
           }}
         >
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -395,7 +394,7 @@ const App = () => {
               {LANGUAGES[language as LanguageKey].heroSubtitle}
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed">
+          <p className="text-xl md:text-2xl text-white mb-8 leading-relaxed">
             {LANGUAGES[language as LanguageKey].heroDesc}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
